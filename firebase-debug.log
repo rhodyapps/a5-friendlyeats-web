@@ -1,28 +1,71 @@
-[debug] [2021-10-04T22:55:55.934Z] ----------------------------------------------------------------------
-[debug] [2021-10-04T22:55:55.936Z] Command:       /usr/local/bin/node /usr/local/bin/firebase use --add
-[debug] [2021-10-04T22:55:55.936Z] CLI Version:   9.19.0
-[debug] [2021-10-04T22:55:55.936Z] Platform:      darwin
-[debug] [2021-10-04T22:55:55.936Z] Node Version:  v14.17.5
-[debug] [2021-10-04T22:55:55.937Z] Time:          Mon Oct 04 2021 18:55:55 GMT-0400 (Eastern Daylight Time)
-[debug] [2021-10-04T22:55:55.937Z] ----------------------------------------------------------------------
+[debug] [2021-10-05T22:29:12.297Z] ----------------------------------------------------------------------
+[debug] [2021-10-05T22:29:12.299Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --only hosting
+[debug] [2021-10-05T22:29:12.299Z] CLI Version:   9.19.0
+[debug] [2021-10-05T22:29:12.299Z] Platform:      darwin
+[debug] [2021-10-05T22:29:12.299Z] Node Version:  v14.17.5
+[debug] [2021-10-05T22:29:12.300Z] Time:          Tue Oct 05 2021 18:29:12 GMT-0400 (Eastern Daylight Time)
+[debug] [2021-10-05T22:29:12.300Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2021-10-04T22:55:55.986Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-10-04T22:55:55.987Z] > authorizing via signed-in user (rhodyapps@gmail.com)
-[debug] [2021-10-04T22:55:55.989Z] > refreshing access token with scopes: []
-[debug] [2021-10-04T22:55:55.989Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2021-10-05T22:29:12.349Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-05T22:29:12.349Z] > authorizing via signed-in user (rhodyapps@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2021-10-05T22:29:12.368Z] [hub] writing locator at /var/folders/l8/jbz2jzzj7g307c164wgqb6qc0000gn/T/hub-friendlyeatsweb-412c8.json
+[debug] [2021-10-05T22:29:12.403Z] > refreshing access token with scopes: []
+[debug] [2021-10-05T22:29:12.404Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2021-10-04T22:55:56.131Z] <<< HTTP RESPONSE 400 {"date":"Mon, 04 Oct 2021 22:55:56 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-10-04T22:55:56.133Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
-[debug] [2021-10-04T22:55:56.271Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
-[debug] [2021-10-04T22:55:56.271Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
-[debug] [2021-10-04T22:55:56.273Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2021-10-04T22:55:56.357Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
-    at Client.doRequest (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async Client.request (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
-    at async getProjectPage (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:233:17)
-    at async getFirebaseProjectPage (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:250:23)
-    at async listFirebaseProjects (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:281:29)
-[error] 
-[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2021-10-05T22:29:12.506Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 05 Oct 2021 22:29:12 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T22:29:12.549Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeatsweb-412c8/sites 
+[debug] [2021-10-05T22:29:12.995Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeatsweb-412c8/sites 200
+[debug] [2021-10-05T22:29:12.996Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeatsweb-412c8/sites {"sites":[{"name":"projects/819573529083/sites/friendlyeatsweb-412c8","defaultUrl":"https://friendlyeatsweb-412c8.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2021-10-05T22:29:12.997Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeatsweb-412c8/webApps/-/config [none]
+[debug] [2021-10-05T22:29:13.313Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeatsweb-412c8/webApps/-/config 200
+[debug] [2021-10-05T22:29:13.313Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeatsweb-412c8/webApps/-/config {"projectId":"friendlyeatsweb-412c8","storageBucket":"friendlyeatsweb-412c8.appspot.com","locationId":"us-central","apiKey":"AIzaSyB1nG-MLoAxE_72GFad5pKqaEPCvCLpKNg","authDomain":"friendlyeatsweb-412c8.firebaseapp.com","messagingSenderId":"819573529083"}
+[info] i  hosting: Serving hosting files from: ./ {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m./\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: None
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET / HTTP/1.1" 200 14308 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET / HTTP/1.1\" 200 14308 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[debug] [2021-10-05T22:31:01.212Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-app-compat.js [none]
+[debug] [2021-10-05T22:31:01.220Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /__/firebase/init.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /__/firebase/init.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[debug] [2021-10-05T22:31:01.241Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /scripts/FriendlyEats.Mock.js HTTP/1.1" 200 2239 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /scripts/FriendlyEats.Mock.js HTTP/1.1\" 200 2239 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /scripts/FriendlyEats.js HTTP/1.1" 200 3819 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /scripts/FriendlyEats.js HTTP/1.1\" 200 3819 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /scripts/FriendlyEats.View.js HTTP/1.1" 200 14941 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /scripts/FriendlyEats.View.js HTTP/1.1\" 200 14941 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /scripts/FriendlyEats.Data.js HTTP/1.1" 200 2945 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /scripts/FriendlyEats.Data.js HTTP/1.1\" 200 2945 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[debug] [2021-10-05T22:31:01.309Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js 200
+[debug] [2021-10-05T22:31:01.309Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js [stream]
+[debug] [2021-10-05T22:31:01.315Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-app-compat.js 200
+[debug] [2021-10-05T22:31:01.315Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-app-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /__/firebase/9.1.1/firebase-app-compat.js HTTP/1.1" 200 6928 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /__/firebase/9.1.1/firebase-app-compat.js HTTP/1.1\" 200 6928 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[debug] [2021-10-05T22:31:01.317Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore-compat.js 200
+[debug] [2021-10-05T22:31:01.317Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore-compat.js [stream]
+[debug] [2021-10-05T22:31:01.321Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-app-compat.js.map [none]
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /__/firebase/9.1.1/firebase-auth-compat.js HTTP/1.1" 200 121624 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /__/firebase/9.1.1/firebase-auth-compat.js HTTP/1.1\" 200 121624 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[debug] [2021-10-05T22:31:01.371Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js.map [none]
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /__/firebase/9.1.1/firebase-firestore-compat.js HTTP/1.1" 200 277106 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /__/firebase/9.1.1/firebase-firestore-compat.js HTTP/1.1\" 200 277106 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[debug] [2021-10-05T22:31:01.402Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore-compat.js.map [none]
+[debug] [2021-10-05T22:31:01.406Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-app-compat.js.map 200
+[debug] [2021-10-05T22:31:01.406Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-app-compat.js.map [stream]
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /images/favicon.ico HTTP/1.1" 200 1150 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /images/favicon.ico HTTP/1.1\" 200 1150 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /__/firebase/9.1.1/firebase-app-compat.js.map HTTP/1.1" 200 134344 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /__/firebase/9.1.1/firebase-app-compat.js.map HTTP/1.1\" 200 134344 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[debug] [2021-10-05T22:31:01.479Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore-compat.js.map 200
+[debug] [2021-10-05T22:31:01.479Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore-compat.js.map [stream]
+[debug] [2021-10-05T22:31:01.591Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js.map 200
+[debug] [2021-10-05T22:31:01.591Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js.map [stream]
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /__/firebase/9.1.1/firebase-firestore-compat.js.map HTTP/1.1" 200 2715791 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /__/firebase/9.1.1/firebase-firestore-compat.js.map HTTP/1.1\" 200 2715791 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] "GET /__/firebase/9.1.1/firebase-auth-compat.js.map HTTP/1.1" 200 724742 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Oct/2021:22:31:01 +0000] \"GET /__/firebase/9.1.1/firebase-auth-compat.js.map HTTP/1.1\" 200 724742 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36\""}}
