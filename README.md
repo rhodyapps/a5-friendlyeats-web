@@ -1,4 +1,4 @@
-# FriendlyEats (Web)
+# Firestore Template (Web)
 
 ## Comsc230 TN
 
